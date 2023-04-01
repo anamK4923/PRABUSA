@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREBUSA | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="/img/prebusa.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>I'ts not just a Candy<br>I'ts <span>Prebusa</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt repellat deleniti
+                    aspernatur incidunt! Quo, tenetur molestias voluptatum iusto quod, esse adipisci sed amet aut maxime
+                    laborum voluptatibus accusamus. Fugiat?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="/img/PEPAYA.png" class="permen">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/img/PEPAYA.png" onclick="imgSlider('/img/PEPAYA.png');changeCircleColor('#017143')"
+                    id="myDIV">
+            </li>
+            <li><img src="/img/SALAK.png" onclick="imgSlider('/img/SALAK.png');changeCircleColor('#eb7495')" id="myDIV">
+            </li>
+            <li><img src="/img/WORTEL.png" onclick="imgSlider('/img/WORTEL.png');changeCircleColor('#d752d1')"
+                    id="myDIV">
+            </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.permen').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
