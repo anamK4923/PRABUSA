@@ -6,7 +6,15 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 
+body {
+  background: linear-gradient(to bottom, #ff9d00, #ffecce);
+}
 section {
   position: relative;
   width: 100%;
@@ -15,7 +23,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ff6e0e;
+  /* background: #0eff26; */
   border: 2px solid black;
 }
 
@@ -25,10 +33,11 @@ header {
   left: 0;
   width: 100%;
   padding: 10px 100px;
+  gap: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  background: #ff6e0e;
+  /* background: #a7ff0e; */
   /* border: 2px solid black; */
 }
 
@@ -48,9 +57,9 @@ header ul li {
 
 header ul li a {
   display: inline-block;
-  color: #333;
+  color: #ffffff;
   font-weight: 400;
-  margin-left: 40px;
+  margin-right: 40px;
   text-decoration: none;
 }
 
@@ -79,7 +88,8 @@ header ul li a {
 }
 
 .content .textBox h2 span {
-  color: #017143;
+  color: linear-gradient(to right, #ff9d00, #ff006a);
+  /* border: solid 2px #ffffff; */
   font-size: 1.2em;
   font-weight: 900;
 }
@@ -93,9 +103,9 @@ header ul li a {
   margin-top: 20px;
   padding: 8px 20px;
   color: #fff;
-  background: #017143;
+  background: linear-gradient(to right, #ff9d00, #ff006a);
   font-weight: 500;
-  border-radius: 40px;
+  border-radius: 10px;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -197,6 +207,9 @@ header ul li a {
   transform: scale(0.6);
   filter: invert(1);
 }
+.deskripsi {
+  font-size: 19px;
+}
 
 .sci li a img {
   max-width: 60px;
@@ -208,7 +221,7 @@ header ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #017143;
+  background: #fab505;
   clip-path: circle(600px at right 800px);
 }
 
@@ -224,4 +237,10 @@ header ul li a {
   background-size: 110%;
   background-position: center;
   transition: 0.5s;
+}
+
+.tulisan-prebusa {
+  width: 350px;
+  height: 60px;
+  margin-bottom: -10px;
 }
