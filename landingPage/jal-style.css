@@ -243,8 +243,7 @@ body {
   height: 260px;
 }
 
-.container,
-.container-home {
+.container {
   width: 100%;
   height: auto;
   display: contents;
@@ -257,10 +256,19 @@ body {
   padding: 10px;
   border: solid 2px #d343d3;
 }
+
+.container-home {
+  /* width: 50%; */
+  height: auto;
+  display: contents;
+  padding: 5px;
+}
+
 .menu-container-home {
-  width: 100%;
+  width: 71%;
   height: auto;
   padding: 10px;
+  padding-left: 2.9%;
   border: solid 2px #d343d3;
   margin-top: 3%;
 }
@@ -274,10 +282,14 @@ body {
 .menu-container-home img {
   width: 260px;
 }
+.menu-container img {
+  width: 200px;
+}
 .tulisan-prebusa {
   margin-bottom: -7px;
 }
 .deskripsi {
+  width: 80%;
   font-size: 19px;
 }
 
@@ -296,10 +308,11 @@ body {
   width: 300px;
   /* height: 500px; */
   display: flex;
+  position: fixed;
   margin-top: -200px;
 }
 .circle {
-  display: grid;
+  /* display: grid; */
   position: fixed;
   width: 100%;
   height: 120%;
