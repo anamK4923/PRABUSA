@@ -4,144 +4,270 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PREBUSA | Home</title>
+    <title>PREBUSA | Menu</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .item-logo {
+        margin-left: 20px;
+        margin-top: -5px;
+        top: 20px;
+        height: auto;
+        position: absolute;
+      }
+      .item-ul {
+        margin-left: 120px;
+        top: 20px;
+        height: auto;
+        position: absolute;
+      }
+      .button-cari {
+        margin-top: 2px;
+        margin-right: -5px;
+        cursor: pointer;
+        background: #efeeee;
+        padding: 3px 5px 0px 5px;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: none;
+        height: 27px;
+      }
+      @media (max-width: 600px) {
+        .item-ul {
+          margin-top: -5px;
+          margin-left: 70px;
+        }
+      }
+      @media (max-width: 570px) {
+        .item-logo {
+          margin-left: 40px;
+        }
+      }
+      @media (max-width: 511px) {
+        .button-cari {
+          display: block;
+        }
+        .putih,
+        .apaya {
+          display: none;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <section>
-      <!-- <div class="nav">
-        <button type="button">Skills</button>
-        <button type="button" class="active">Awards</button>
-        <button type="button">Projects</button>
-      </div> -->
-      <header>
-        <a href="#"><img src="../img/prebusa.png" class="logo" alt="" /></a>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="menu.html"><strong>Menu</strong></a>
-          </li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="../login/login.html">Login</a></li>
-        </ul>
-      </header>
-      <main>
-        <div class="main-menu">
-          <div class="isi-main-menu">
-            <div class="container">
-              <div class="fix-container">
-                <div class="grid-fix-container">
-                  <img src="../img/PEPAYA.png" alt="" />
-                </div>
-                <div class="grid-fix-container-salak">
-                  <img src="../img/SALAK.png" alt="" />
-                </div>
-                <div class="grid-fix-container-tulisan">
-                  <h1>LET'S BUY CANDY</h1>
-                  <h1>AT OUR PLACE</h1>
-                </div>
-                <div class="grid-fix-container">
-                  <img src="../img/WORTEL.png" alt="" />
-                </div>
-              </div>
+    <header>
+      <div class="navbar-atas">
+        <div class="navbar-item">
+          <div class="item-logo">
+            <a href="#"><img src="../img/prebusa.png" class="logo" alt="" /></a>
+          </div>
+          <div class="item-ul">
+            <ul>
+              <li>
+                <a href="index.html" id="home-menu1">Home</a>
+              </li>
+              <li>
+                <a href="menu.html" id="home-menu2"><strong>Menu</strong></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/prebusa.store/?igshid=YmMyMTA2M2Y%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="home-menu3"
+                  >Contact</a
+                >
+              </li>
+              <!-- <li><a href="../login/login.php">Login</a></li> -->
+              <li><div class="sekat-li"></div></li>
+            </ul>
+          </div>
+          <div class="navbar-kanan-atas">
+            <div class="button-cari">
+              <img
+                src="../img/hd/OIP__1_-removebg-preview.png"
+                alt=""
+                class="gambar-cari"
+              />
             </div>
-            <div class="menu-con">
-              <div class="isimenu">
-                <a href="#target-section2"
-                  ><img
-                    src="../img/MENU PEPAYAppy.png"
-                    alt="Click me to scroll"
-                    href="#target-section2"
-                /></a>
-              </div>
-              <div class="isimenu">
-                <a href="#target-section1">
-                  <img src="../img/MENU SALAKslk.png" alt="" />
-                </a>
-              </div>
-              <div class="isimenu">
-                <a href="#target-section0">
-                  <img src="../img/MENU WORTELwtl.png" alt="" />
-                </a>
-              </div>
+            <div class="putih">
+              <img
+                src="../img/hd/OIP__1_-removebg-preview.png"
+                alt=""
+                class="gambar-cari"
+              />
+              <input
+                type="text"
+                placeholder="Cari di Prebusa"
+                class="navbar-search"
+              />
+            </div>
+            <div class="apaya">
+              <img src="../img/hd/Buy.png" alt="" class="gambar-cari" />
             </div>
           </div>
+          <!-- <div class="navbar-toggle">&#9776;</div> -->
         </div>
-        <style>
-          .isi-target-section p {
-            font-size: 27px;
-          }
-        </style>
-        <div class="target-scroll">
-          <div class="target-section" id="target-section2">
-            <img src="../img/MENU PEPAYAsolo.png" alt="" class="solo" />
-          </div>
-          <div class="isi-target-section">
-            <p>Prebusa</p>
-            <p>Permen Buah dan Sayur</p>
-            <p style="margin-bottom: 9px">Variant Pepaya</p>
-            <img src="../img/5.0h.png" alt="" style="width: 23px" />
-            <img src="../img/RATINGh.png" alt="" style="width: 100px" />
-            <br />
-            <img
-              src="../img/RP. 5000h.png"
-              alt=""
-              style="width: 100px; margin-top: 9px"
-            />
-            <br />
-            <a href="" style="margin-top: 7px"
-              ><strong style="font-size: larger">PESAN SEKARANG</strong>
-            </a>
+
+        <!-- <div class="abspp"> -->
+        <div class="navbar-img">
+          <div class="fix-container">
+            <div class="grid-fix-container">
+              <img src="../img/hd/PEPAYA hdd.png" alt="" />
+            </div>
+            <div class="grid-fix-container">
+              <img src="../img/hd/SALAK hdd.png" alt="" />
+            </div>
+            <div class="grid-fix-container-tulisan">
+              <p>
+                <strong>
+                  LET'S BUY CANDY <br />
+                  AT OUR PLACE
+                </strong>
+              </p>
+            </div>
+            <div class="grid-fix-container">
+              <img src="../img/hd/WORTEL hdd.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="target-scroll">
-          <div class="target-section" id="target-section1">
-            <img src="../img/MENU PEPAYAsolo.png" alt="" class="solo" />
-          </div>
-          <div class="isi-target-section">
-            <p>Prebusa</p>
-            <p>Permen Buah dan Sayur</p>
-            <p style="margin-bottom: 9px">Variant Salak</p>
-            <img src="../img/5.0h.png" alt="" style="width: 23px" />
-            <img src="../img/RATINGh.png" alt="" style="width: 100px" />
-            <br />
-            <img
-              src="../img/RP. 5000h.png"
-              alt=""
-              style="width: 100px; margin-top: 9px"
-            />
-            <br />
-            <a href="" style="margin-top: 7px"
-              ><strong style="font-size: larger">PESAN SEKARANG</strong>
-            </a>
-          </div>
+        <!-- </div> -->
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="sekat"></div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="menu-container" id="menu-container-1">
+          <a href="#target-section2">
+            <img src="../img/MENU PEPAYAcrop.png" alt="" />
+          </a>
         </div>
-        <div class="target-scroll">
-          <div class="target-section" id="target-section0">
-            <img src="../img/MENU PEPAYAsolo.png" alt="" class="solo" />
-          </div>
-          <div class="isi-target-section">
-            <p>Prebusa</p>
-            <p>Permen Buah dan Sayur</p>
-            <p style="margin-bottom: 9px">Variant Wortel</p>
-            <img src="../img/5.0h.png" alt="" style="width: 23px" />
-            <img src="../img/RATINGh.png" alt="" style="width: 100px" />
-            <br />
-            <img
-              src="../img/RP. 5000h.png"
-              alt=""
-              style="width: 100px; margin-top: 9px"
-            />
-            <br />
-            <a href="" style="margin-top: 7px"
-              ><strong style="font-size: larger">PESAN SEKARANG</strong>
-            </a>
-          </div>
+        <div class="menu-container" id="menu-container-2">
+          <a href="#target-section1">
+            <img src="../img/MENU SALAKcrop.png" alt="" />
+          </a>
         </div>
-      </main>
-    </section>
+        <div class="menu-container" id="menu-container-3">
+          <a href="#target-section0">
+            <img src="../img/MENU WORTELcrop.png" alt="" />
+          </a>
+        </div>
+        <div
+          class=""
+          id="target-section2"
+          style="width: 10px; height: 10px; margin-top: -150px"
+        ></div>
+      </div>
+    </main>
+
+    <!-- TARGET SCROLL -->
+    <style>
+      .isi-target-section p {
+        font-size: 27px;
+      }
+    </style>
+
+    <div class="target-scroll">
+      <div class="target-section">
+        <img src="../img/hd/prebusa pepaya hd.png" alt="" class="solo" />
+      </div>
+      <div class="isi-target-section">
+        <p>
+          <strong>
+            Prebusa <br />Permen Buah dan Sayur <br />Variant Pepaya
+          </strong>
+        </p>
+        <div class="oww" style="margin-top: -15px">
+          <img src="../img/5.0h.png" alt="" style="width: 23px" />
+          <img src="../img/RATINGh.png" alt="" style="width: 100px" />
+          <br />
+          <img
+            src="../img/RP. 5000h.png"
+            alt=""
+            style="width: 150px; margin-top: 7px"
+          />
+          <br />
+          <a href="" style="margin-top: 7px"
+            ><strong style="font-size: larger">PESAN SEKARANG</strong>
+          </a>
+        </div>
+      </div>
+      <div
+        class=""
+        id="target-section1"
+        style="width: 10px; height: 10px; margin-bottom: 0px"
+      ></div>
+    </div>
+
+    <div class="target-scroll">
+      <div class="target-section" id="target-section1">
+        <img src="../img/hd/prebusa salak hd.png" alt="" class="solo" />
+      </div>
+      <div class="isi-target-section">
+        <p>
+          <strong>
+            Prebusa <br />Permen Buah dan Sayur <br />Variant Salak
+          </strong>
+        </p>
+        <div class="oww" style="margin-top: -15px">
+          <img src="../img/5.0h.png" alt="" style="width: 23px" />
+          <img src="../img/RATINGh.png" alt="" style="width: 100px" />
+          <br />
+          <img
+            src="../img/RP. 5000h.png"
+            alt=""
+            style="width: 150px; margin-top: 7px"
+          />
+          <br />
+          <a href="" style="margin-top: 7px"
+            ><strong style="font-size: larger">PESAN SEKARANG</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="target-scroll">
+      <div class="target-section" id="target-section0">
+        <img src="../img/hd/prebusa wortel hd.png" alt="" class="solo" />
+      </div>
+      <div class="isi-target-section">
+        <p>
+          <strong>
+            Prebusa <br />Permen Buah dan Sayur <br />Variant Wortel
+          </strong>
+        </p>
+        <div class="oww" style="margin-top: -15px">
+          <img src="../img/5.0h.png" alt="" style="width: 23px" />
+          <img src="../img/RATINGh.png" alt="" style="width: 100px" />
+          <br />
+          <img
+            src="../img/RP. 5000h.png"
+            alt=""
+            style="width: 150px; margin-top: 7px"
+          />
+          <br />
+          <a href="" style="margin-top: 7px"
+            ><strong style="font-size: larger">PESAN SEKARANG</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript">
+      const toggleSearch = () => document.body.classList.toggle("open");
+      // var navbarToggle = document.querySelector(".navbar-toggle");
+      // var navbarList = document.querySelector(".item-ul ul");
+      // var navbarList2 = document.querySelector(".putih");
+
+      // navbarToggle.addEventListener("click", function () {
+      //   navbarList.classList.toggle("show");
+      //   navbarList2.classList.toggle("show");
+      // });
+    </script>
   </body>
 </html>
