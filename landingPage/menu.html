@@ -14,11 +14,15 @@
         height: auto;
         position: absolute;
       }
+
       .item-ul {
         margin-left: 120px;
         top: 20px;
         height: auto;
         position: absolute;
+      }
+      .itemitem {
+        margin-top: 18px;
       }
       .button-cari {
         margin-top: 2px;
@@ -33,20 +37,35 @@
         display: none;
         height: 27px;
       }
+      .sembunyi {
+        display: none;
+      }
+
       @media (max-width: 600px) {
         .item-ul {
           margin-top: -5px;
           margin-left: 70px;
         }
+        .itemitem {
+          margin-top: 17px;
+        }
       }
+
       @media (max-width: 570px) {
         .item-logo {
           margin-left: 40px;
         }
       }
+
       @media (max-width: 511px) {
         .button-cari {
           display: block;
+        }
+        .itemitem {
+          margin-top: 15px;
+        }
+        .button-cari {
+          padding: 0 5px 0px 5px;
         }
         .putih,
         .apaya {
@@ -54,6 +73,17 @@
         }
       }
     </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -63,7 +93,7 @@
           <div class="item-logo">
             <a href="#"><img src="../img/prebusa.png" class="logo" alt="" /></a>
           </div>
-          <div class="item-ul">
+          <div class="item-ul itemitem">
             <ul>
               <li>
                 <a href="index.html" id="home-menu1">Home</a>
@@ -81,10 +111,16 @@
                 >
               </li>
               <!-- <li><a href="../login/login.php">Login</a></li> -->
-              <li><div class="sekat-li"></div></li>
+              <li>
+                <div class="sekat-li"></div>
+              </li>
             </ul>
           </div>
-          <div class="navbar-kanan-atas">
+          <div
+            class="navbar-kanan-atas"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
             <div class="button-cari">
               <img
                 src="../img/hd/OIP__1_-removebg-preview.png"
@@ -140,6 +176,44 @@
     <div class="container">
       <div class="sekat"></div>
     </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Cari di Prebusa
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="search-input" />
+              </div>
+            </form>
+            <div class="mb-3">
+              <label for="search-input" class="col-form-label"
+                >Hasil Pencarian</label
+              >
+              <div id="search-results" style="cursor: pointer">
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
       <div class="container">
         <div class="menu-container" id="menu-container-1">
@@ -172,13 +246,16 @@
       }
     </style>
 
-    <div class="target-scroll">
+    <div class="target-scroll" id="punya-pepaya">
+      <div class="sembunyi" id="punya-pepaya">
+        <p>Permen Variant Pepaya</p>
+      </div>
       <div class="target-section">
         <img src="../img/hd/prebusa pepaya hd.png" alt="" class="solo" />
       </div>
       <div class="isi-target-section">
         <p>
-          <strong>
+          <strong class="pil">
             Prebusa <br />Permen Buah dan Sayur <br />Variant Pepaya
           </strong>
         </p>
@@ -192,7 +269,10 @@
             style="width: 150px; margin-top: 7px"
           />
           <br />
-          <a href="" style="margin-top: 7px"
+          <a
+            href="https://www.instagram.com/prebusa.store/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+            style="margin-top: 7px"
             ><strong style="font-size: larger">PESAN SEKARANG</strong>
           </a>
         </div>
@@ -204,12 +284,15 @@
       ></div>
     </div>
 
-    <div class="target-scroll">
+    <div class="target-scroll" id="punya-salak">
+      <div class="sembunyi" id="punya-salak">
+        <p>Permen Variant Salak</p>
+      </div>
       <div class="target-section" id="target-section1">
         <img src="../img/hd/prebusa salak hd.png" alt="" class="solo" />
       </div>
       <div class="isi-target-section">
-        <p>
+        <p class="pil">
           <strong>
             Prebusa <br />Permen Buah dan Sayur <br />Variant Salak
           </strong>
@@ -224,19 +307,25 @@
             style="width: 150px; margin-top: 7px"
           />
           <br />
-          <a href="" style="margin-top: 7px"
+          <a
+            href="https://www.instagram.com/prebusa.store/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+            style="margin-top: 7px"
             ><strong style="font-size: larger">PESAN SEKARANG</strong>
           </a>
         </div>
       </div>
     </div>
 
-    <div class="target-scroll">
+    <div class="target-scroll" id="punya-wortel">
+      <div class="sembunyi" id="punya-wortel">
+        <p>Permen Variant Wortel</p>
+      </div>
       <div class="target-section" id="target-section0">
         <img src="../img/hd/prebusa wortel hd.png" alt="" class="solo" />
       </div>
       <div class="isi-target-section">
-        <p>
+        <p class="pil">
           <strong>
             Prebusa <br />Permen Buah dan Sayur <br />Variant Wortel
           </strong>
@@ -251,7 +340,10 @@
             style="width: 150px; margin-top: 7px"
           />
           <br />
-          <a href="" style="margin-top: 7px"
+          <a
+            href="https://www.instagram.com/prebusa.store/?igshid=YmMyMTA2M2Y%3D"
+            target="_blank"
+            style="margin-top: 7px"
             ><strong style="font-size: larger">PESAN SEKARANG</strong>
           </a>
         </div>
@@ -268,6 +360,46 @@
       //   navbarList.classList.toggle("show");
       //   navbarList2.classList.toggle("show");
       // });
+    </script>
+    <script>
+      document
+        .getElementById("search-input")
+        .addEventListener("input", function () {
+          var searchInput = document
+            .getElementById("search-input")
+            .value.toLowerCase();
+          var searchResults = document.getElementById("search-results");
+          searchResults.innerHTML = "";
+          var candies = document.getElementsByClassName("sembunyi");
+          var scrollToId = null;
+
+          // var candies = document.getElementsByTagName("h1");
+          for (var i = 0; i < candies.length; i++) {
+            var candyName = candies[i].textContent.toLowerCase();
+            if (candyName.includes(searchInput)) {
+              var listItem = document.createElement("li");
+              var candyId = candies[i].getAttribute("id");
+              listItem.textContent = candies[i].textContent;
+              listItem.dataset.candyId = candyId;
+              listItem.addEventListener("click", function () {
+                var id = this.dataset.candyId;
+                scrollToId = id;
+                document
+                  .getElementById(id)
+                  .scrollIntoView({ behavior: "smooth" });
+                var modal = document.getElementById("exampleModal");
+                var bootstrapModal = bootstrap.Modal.getInstance(modal);
+                bootstrapModal.hide();
+              });
+              searchResults.appendChild(listItem);
+            }
+          }
+          if (scrollToId) {
+            document
+              .getElementById(scrollToId)
+              .scrollIntoView({ behavior: "smooth" });
+          }
+        });
     </script>
   </body>
 </html>
